@@ -55,3 +55,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Angular Material Installation
 
+# Link para unirse al grupo de whatsapp
+https://chat.whatsapp.com/77hvXXpALi5DxaBm9y1S38
+
+# Link del material del curso y registrar sus datos personales en la hoja de calculo
+https://drive.google.com/open?id=197Oy0oFO4_xmmziUiRM-vCJcy7yHajJV
