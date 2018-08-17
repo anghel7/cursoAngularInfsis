@@ -14,10 +14,16 @@ export class ProductoItemComponent implements OnInit {
   // ctrl + shift + i linux
   constructor() {
     this.producto = {
-      nombre: "Coca Colla",
+      nombre: "Gaseosa ",
       precio: 12.5,
-      stock: 10
+      stock: 10,
+      cantidad: 20,
+      marca: "Coca Cola"
     };
+  }
+
+  mostrarDetalle(): void {
+    console.log('Producto: ', this.producto);
   }
 
   ngOnInit() {
