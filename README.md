@@ -61,5 +61,5 @@ https://chat.whatsapp.com/77hvXXpALi5DxaBm9y1S38
 # Link de las diapositivas
 https://docs.google.com/presentation/d/1xRz7-t1eclhcJTbN54KBnxhWtYS706kYOxcgI2yLC2k/edit?usp=sharing
 
-# Link del material del curso y registrar sus datos personales en la hoja de calculo
-https://drive.google.com/open?id=197Oy0oFO4_xmmziUiRM-vCJcy7yHajJV
+# Link para registrar sus datos personales
+https://docs.google.com/spreadsheets/d/1SyTxTtkwGNRqbgvX0gS9EKUu-0lRmZw9uqPg-tFY_H4/edit?usp=sharing
