@@ -1,3 +1,13 @@
 <h3>{{ titulo }}</h3>
 <h3 [innerHTML]="titulo"></h3>
+  <label>Buscar</label>
+  <input [(ngModel)]='campoBusqueda' name="buscar"><br>
+  <input [(ngModel)]='campoBusqueda' name="buscar1"><br>
+  <input [(ngModel)]='campoBusqueda' name="buscar2"><br>
+  <input [(ngModel)]='campoBusqueda' name="buscar3"><br>
+  <input [(ngModel)]='campoBusqueda' name="buscar4"><br>
+  <input [(ngModel)]='campoBusqueda' name="buscar5"><br>
+  <input [(ngModel)]='campoBusqueda' name="buscar6"><br>
+  <h3>{{ campoBusqueda }}</h3>
+  <button (click)="buscar()">Aceptar</button>
 <app-producto-item></app-producto-item>

@@ -8,12 +8,17 @@ import { Component, OnInit } from '@angular/core';
 export class ProductoListComponent implements OnInit {
 
   titulo:string;
+  campoBusqueda:string="hola";
 
   constructor() {
     this.titulo = "Lista de productos"
   }
 
   ngOnInit() {
+  }
+
+  buscar():void{
+    this.campoBusqueda="nuevo busqueda";
   }
 
 }
