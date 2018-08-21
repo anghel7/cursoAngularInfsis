@@ -1,17 +1,8 @@
-<h3>{{ titulo }}</h3>
 <h3 [innerHTML]="titulo"></h3>
 <label>Buscar</label>
 <input [(ngModel)]='campoBusqueda' name="buscar">
 <button (click)="buscar()">Aceptar</button>
 <hr>
-<div *ngFor="let prod of listaProductos">
-  <p>Nombre: {{ prod.nombre }}</p>
-  <p>Precio: {{ prod.precio }}</p>
-  <p>Stock: {{ prod.stock }}</p> 
-  <p *ngIf="prod.id">Id: {{ prod.id }}</p>
-  <hr> 
-</div>
 
-<!--
-<app-producto-item></app-producto-item>
--->
+<app-producto-item *ngFor="let prod of listaProductos" [producto]="prod">
+</app-producto-item>
