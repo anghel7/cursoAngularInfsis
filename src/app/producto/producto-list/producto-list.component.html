@@ -1,13 +1,17 @@
 <h3>{{ titulo }}</h3>
 <h3 [innerHTML]="titulo"></h3>
-  <label>Buscar</label>
-  <input [(ngModel)]='campoBusqueda' name="buscar"><br>
-  <input [(ngModel)]='campoBusqueda' name="buscar1"><br>
-  <input [(ngModel)]='campoBusqueda' name="buscar2"><br>
-  <input [(ngModel)]='campoBusqueda' name="buscar3"><br>
-  <input [(ngModel)]='campoBusqueda' name="buscar4"><br>
-  <input [(ngModel)]='campoBusqueda' name="buscar5"><br>
-  <input [(ngModel)]='campoBusqueda' name="buscar6"><br>
-  <h3>{{ campoBusqueda }}</h3>
-  <button (click)="buscar()">Aceptar</button>
+<label>Buscar</label>
+<input [(ngModel)]='campoBusqueda' name="buscar">
+<button (click)="buscar()">Aceptar</button>
+<hr>
+<div *ngFor="let prod of listaProductos">
+  <p>Nombre: {{ prod.nombre }}</p>
+  <p>Precio: {{ prod.precio }}</p>
+  <p>Stock: {{ prod.stock }}</p> 
+  <p *ngIf="prod.id">Id: {{ prod.id }}</p>
+  <hr> 
+</div>
+
+<!--
 <app-producto-item></app-producto-item>
+-->
