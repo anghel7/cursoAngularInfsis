@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { ProductoModule } from './producto/producto.module';
+import { LayoutModule } from './layout/layout.module';
 
 @NgModule({
   declarations: [
@@ -10,7 +11,8 @@ import { ProductoModule } from './producto/producto.module';
   ],
   imports: [
     BrowserModule,
-    ProductoModule
+    ProductoModule,
+    LayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
