@@ -3,7 +3,8 @@ import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {
   MatButtonModule,
-  MatCheckboxModule
+  MatCheckboxModule,
+  MatToolbarModule
 } from '@angular/material';
 
 @NgModule({
@@ -11,11 +12,13 @@ import {
     CommonModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatToolbarModule
   ],
   exports: [
     MatButtonModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatToolbarModule
   ],
   declarations: []
 })
