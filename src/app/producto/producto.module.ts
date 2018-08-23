@@ -4,6 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { ProductoItemComponent } from './producto-item/producto-item.component';
 import { ProductoListComponent } from './producto-list/producto-list.component';
 import { MaterialModule } from '../material/material.module';
+import { ProductoCreateComponent } from './producto-create/producto-create.component';
+import { ProductoEditComponent } from './producto-edit/producto-edit.component';
 
 @NgModule({
   imports: [
@@ -13,7 +15,9 @@ import { MaterialModule } from '../material/material.module';
   ],
   declarations: [
     ProductoItemComponent,
-    ProductoListComponent
+    ProductoListComponent,
+    ProductoCreateComponent,
+    ProductoEditComponent
   ],
   exports: [
     ProductoItemComponent,
