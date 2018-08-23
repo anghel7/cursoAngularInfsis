@@ -63,3 +63,6 @@ https://docs.google.com/presentation/d/1xRz7-t1eclhcJTbN54KBnxhWtYS706kYOxcgI2yL
 
 # Link para registrar sus datos personales
 https://docs.google.com/spreadsheets/d/1SyTxTtkwGNRqbgvX0gS9EKUu-0lRmZw9uqPg-tFY_H4/edit?usp=sharing
+
+# Dominio de la servicio rest para productos
+http://cursoangular.hosting.cs.umss.edu.bo/api/productos
