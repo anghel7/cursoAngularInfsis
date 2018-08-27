@@ -9,14 +9,11 @@ import { ProductoService } from '../services/producto.service';
 })
 export class ProductoListComponent implements OnInit {
 
-  titulo: string;
+  titulo: string = "Lista de productos";
   campoBusqueda: string = "hola";
-
-  listaProductos: Producto[];
+  listaProductos: Producto[] = [];
 
   constructor(private myProductoService: ProductoService) {
-    this.listaProductos = [];
-    this.titulo = "Lista de productos"
   }
 
   ngOnInit() {

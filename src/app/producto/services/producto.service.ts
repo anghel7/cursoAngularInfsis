@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Producto } from '../models/producto.interface';
+import { PRODUCTOS } from '../mocks/producto.mock';
 
 @Injectable({
   providedIn: 'root'
@@ -10,7 +11,7 @@ export class ProductoService {
   constructor() { }
 
   getAllProductos(): Producto[] {
-    return [];
+    return PRODUCTOS;
   }
 
   getProductoById(id: number): Producto {
