@@ -4,7 +4,10 @@ import { CommonModule } from '@angular/common';
 import {
   MatButtonModule,
   MatCheckboxModule,
-  MatToolbarModule
+  MatToolbarModule,
+  MatCardModule,
+  MatInputModule,
+  MatFormFieldModule
 } from '@angular/material';
 
 @NgModule({
@@ -12,12 +15,18 @@ import {
     CommonModule,
     MatButtonModule,
     MatCheckboxModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatCardModule,
+    MatInputModule,
+    MatFormFieldModule
   ],
   exports: [
     MatButtonModule,
     MatCheckboxModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatCardModule,
+    MatInputModule,
+    MatFormFieldModule
   ],
   declarations: []
 })
