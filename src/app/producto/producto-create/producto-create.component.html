@@ -7,33 +7,35 @@
   <mat-card-content>
     <mat-form-field class="full-width-input">
       <input matInput placeholder="Nombre del producto" 
-      type="text" name="nombre" />
+      type="text" name="nombre" [(ngModel)]="producto.nombre"/>
     </mat-form-field>
     <mat-form-field class="full-width-input">
         <input matInput placeholder="Precio" 
-        type="number" name="precio" />
+        type="number" name="precio" [(ngModel)]="producto.precio" />
     </mat-form-field>
     <mat-form-field class="full-width-input">
         <input matInput placeholder="Stock" 
-        type="number" name="stock" />
+        type="number" name="stock" [(ngModel)]="producto.stock"/>
     </mat-form-field>
     <mat-form-field class="full-width-input">
         <input matInput placeholder="Cantidad" 
-        type="number" name="cantidad" />
+        type="number" name="cantidad" [(ngModel)]="producto.cantidad"/>
     </mat-form-field>
     <mat-form-field class="full-width-input">
         <input matInput placeholder="Marca" 
-        type="text" name="maca" />
+        type="text" name="maca" [(ngModel)]="producto.marca"/>
     </mat-form-field>
     <mat-form-field class="full-width-input">
         <input matInput placeholder="Enlace de la imagen" 
-        type="text" name="imageurl" />
+        type="text" name="imageurl" [(ngModel)]="producto.image_url"/>
     </mat-form-field>
   </mat-card-content>
 
   <mat-card-actions class="card-action">
-    <button mat-stroked-button color="primary">Aceptar</button>
-    <button mat-stroked-button color="primary">Cancelar</button>
+    <button mat-stroked-button 
+    color="primary" (click)="yesAction()">Aceptar</button>
+    <button mat-stroked-button 
+    color="primary" (click)="noAction()">Cancelar</button>
   </mat-card-actions>
 
 </mat-card>
