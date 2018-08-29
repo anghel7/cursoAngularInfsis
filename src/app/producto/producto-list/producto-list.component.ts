@@ -40,4 +40,9 @@ export class ProductoListComponent implements OnInit {
     this.campoBusqueda = "nuevo busqueda";
   }
 
+  focusedAction($event: Producto): void {
+    console.log('Recibiendo datos del component hijo: ', $event);
+
+  }
+
 }

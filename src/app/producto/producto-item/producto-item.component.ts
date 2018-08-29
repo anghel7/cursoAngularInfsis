@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Producto } from '../models/producto.interface';
 
 @Component({
@@ -12,10 +12,15 @@ export class ProductoItemComponent implements OnInit {
   producto: Producto;
   // alt + shift + f windows
   // ctrl + shift + i linux
-  constructor() { }
+  @Output()
+  onFocused: EventEmitter<Producto>;
+
+  constructor() {
+    this.onFocused = new EventEmitter();
+  }
 
   mostrarDetalle(): void {
-    console.log('Producto: ', this.producto);
+    this.onFocused.emit(this.producto);
   }
 
   ngOnInit() {
