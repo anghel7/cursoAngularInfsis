@@ -4,6 +4,7 @@
 <button (click)="buscar()">Aceptar</button>
 <hr>
 
-<app-producto-item *ngFor="let prod of listaProductos" 
-[producto]="prod" (onFocused)="focusedAction($event)">
+<app-producto-detail [producto]="productoDetailed"></app-producto-detail>
+
+<app-producto-item *ngFor="let prod of listaProductos" [producto]="prod" (onFocused)="focusedAction($event)">
 </app-producto-item>

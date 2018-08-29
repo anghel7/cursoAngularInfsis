@@ -26,4 +26,12 @@ export class ProductoItemComponent implements OnInit {
   ngOnInit() {
   }
 
+
+  editarProducto(): void {
+    console.log('Editando Producto');
+  }
+
+  eliminarProducto(id: number): void {
+    console.log('Eliminando el producto con el id: ', id);
+  }
 }

@@ -2,5 +2,8 @@
   <p>Nombre: {{ producto.nombre }}</p>
   <p>Precio: {{ producto.precio }}</p>
   <p>Stock: {{ producto.stock }}</p>
-  <button mat-stroked-button color="primary" (click)="mostrarDetalle()">Ver Detalles</button>
+  <button mat-stroked-button color="primary" 
+  (click)="editarProducto()">Editar</button>
+  <button mat-stroked-button color="warn" 
+  (click)="eliminarProducto(producto.id_producto)">Eliminar</button>
 </div>

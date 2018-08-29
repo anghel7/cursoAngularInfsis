@@ -13,6 +13,8 @@ export class ProductoListComponent implements OnInit {
   titulo: string = "Lista de productos";
   campoBusqueda: string = "hola";
   listaProductos: Producto[] = [];
+  productoDetailed: Producto;
+
 
   constructor(private myProductoService: ProductoService) {
   }
@@ -41,8 +43,8 @@ export class ProductoListComponent implements OnInit {
   }
 
   focusedAction($event: Producto): void {
-    console.log('Recibiendo datos del component hijo: ', $event);
-
+    //console.log('Recibiendo datos del component hijo: ', $event);
+    this.productoDetailed = $event;
   }
 
 }
