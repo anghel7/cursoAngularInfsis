@@ -2,6 +2,9 @@ import { Injectable } from '@angular/core';
 import { Producto } from '../models/producto.interface';
 import { PRODUCTOS } from '../mocks/producto.mock';
 import { Observable } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
+
+const API_URL = 'http://cursoangular.hosting.cs.umss.edu.bo/api/productos';
 
 @Injectable({
   providedIn: 'root'
@@ -9,21 +12,10 @@ import { Observable } from 'rxjs';
 export class ProductoService {
 
   //get, getall, create, update, delete
-  constructor() { }
+  constructor(private myHttpClient: HttpClient) { }
 
   getAllProductos(): Observable<Producto[]> {
-    return Observable.create(
-      (observer) => {
-        //observer.next(PRODUCTOS);
-        //observer.error(new Error('Error ;) '));
-        //observer.complete();
-        setTimeout(() => {
-          observer.next(PRODUCTOS);
-          observer.complete();
-        }, 5000);
-
-      }
-    );
+    return this.myHttpClient.get<Producto[]>(API_URL);
   }
 
   getProductoById(id: number): Producto {
