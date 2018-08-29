@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Producto } from '../models/producto.interface';
+import { ProductoService } from '../services/producto.service';
+import { Observer } from 'rxjs';
 
 @Component({
   selector: 'app-producto-create',
@@ -17,14 +19,27 @@ export class ProductoCreateComponent implements OnInit {
     image_url: ''
   }
 
-  constructor() { }
+  constructor(private myProductoService: ProductoService) { }
 
   ngOnInit() {
   }
 
   yesAction(): void {
-    console.log('yesAction');
+    let observador: Observer<Producto> = {
+      next: (producto) => {
+        console.log('mostrando Data: ', producto);
+      },
+      error: (error) => {
+        console.log('Se produjo el siguente error al recuperar al crear un productos: ', error);
 
+      },
+      complete: () => {
+        console.log('Proceso finalizado');
+      }
+    };
+
+    this.myProductoService.createProducto(this.producto)
+      .subscribe(observador);
   }
 
   noAction(): void {
