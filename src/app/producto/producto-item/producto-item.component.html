@@ -3,7 +3,7 @@
   <p>Precio: {{ producto.precio }}</p>
   <p>Stock: {{ producto.stock }}</p>
   <button mat-stroked-button color="primary" 
-  (click)="editarProducto()">Editar</button>
+  [routerLink]="['/producto/editar', producto.id_producto]">Editar</button>
   <button mat-stroked-button color="warn" 
   (click)="eliminarProducto(producto.id_producto)">Eliminar</button>
 </div>
