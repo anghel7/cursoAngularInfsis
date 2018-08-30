@@ -26,8 +26,8 @@ export class ProductoService {
     return this.myHttpClient.post<Producto>(API_URL, productoToCreate);
   }
 
-  updateProducto(id: number, productoToUpdate: Producto): Producto {
-    return null;
+  updateProducto(id: number, productoToUpdate: Producto): Observable<Producto> {
+    return this.myHttpClient.put<Producto>(`${API_URL}/${id}`, productoToUpdate);
   }
 
   deleteProductoById(id: number): Producto {
