@@ -18,8 +18,8 @@ export class ProductoService {
     return this.myHttpClient.get<Producto[]>(API_URL);
   }
 
-  getProductoById(id: number): Producto {
-    return null;
+  getProductoById(id: number): Observable<Producto> {
+    return this.myHttpClient.get<Producto>(`${API_URL}/${id}`);
   }
 
   createProducto(productoToCreate: Producto): Observable<Producto> {
