@@ -51,5 +51,14 @@ export class ProductoListComponent implements OnInit {
     //console.log('Recibiendo datos del component hijo: ', $event);
     this.productoDetailed = $event;
   }
+  deleteProducto($event: Producto): void {
+    this.listaProductos = this.listaProductos
+      .filter(
+        (producto) => {
+          return $event.id_producto !== producto.id_producto;
+        }
+      );
+    this.listaProductosDatsource = this.listaProductos;
+  }
 
 }

@@ -6,7 +6,9 @@
 <div class="contenedor">
   <div class="lista-producto">
     <mat-list>
-      <app-producto-item *ngFor="let prod of listaProductosDatsource" [producto]="prod" (onFocused)="focusedAction($event)">
+      <app-producto-item *ngFor="let prod of listaProductosDatsource" 
+      [producto]="prod" (onFocused)="focusedAction($event)"
+      (onDeleted)="deleteProducto($event)">
       </app-producto-item>
     </mat-list>
   </div>
