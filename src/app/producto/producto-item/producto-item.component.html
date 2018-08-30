@@ -1,9 +1,9 @@
-<div (mouseenter)="mostrarDetalle()">
-  <p>Nombre: {{ producto.nombre }}</p>
-  <p>Precio: {{ producto.precio }}</p>
-  <p>Stock: {{ producto.stock }}</p>
+<mat-list-item (mouseenter)="mostrarDetalle()">
+  <img mat-list-avatar [src]="producto.image_url" alt="...">
+  <h4 mat-line>Nombre: {{ producto.nombre }}</h4>
+  <p mat-line>Precio: {{ producto.precio }}</p>  
   <button mat-stroked-button color="primary" 
-  [routerLink]="['/producto/editar', producto.id_producto]">Editar</button>
+  [routerLink]="['/producto/editar', producto.id_producto]">Editar</button>  
   <button mat-stroked-button color="warn" 
   (click)="eliminarProducto(producto.id_producto)">Eliminar</button>
-</div>
+</mat-list-item>

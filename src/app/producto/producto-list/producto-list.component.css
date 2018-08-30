@@ -1,0 +1,20 @@
+.contenedor {
+  width: 100%;
+}
+
+.lista-producto {
+  float: left;
+  position: relative;
+  width: 65%;
+  border: blue solid 1px;
+  height: 400px;
+  overflow:auto;
+}
+
+.detalle-producto {
+  float: right;
+  position: relative;
+  width: 34%;
+  border: blue solid 1px;
+  height: 400px;
+}

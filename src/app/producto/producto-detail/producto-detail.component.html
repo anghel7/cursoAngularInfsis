@@ -5,11 +5,11 @@
     </mat-card-title>
   </mat-card-header>
   <img mat-card-image [src]="producto.image_url" 
-  alt="imagen" width="100px" height="100px">
+  alt="imagen" width="auto" height="150px">
   <mat-card-content>
-    <p><strong>Marca</strong>{{ producto.marca }}</p>
-    <p><strong>Cantidad</strong>{{ producto.cantidad }}</p>
-    <p><strong>Stock</strong>{{ producto.stock }}</p>
-    <p><strong>Precio</strong>{{ producto.precio }}</p>
+    <p><strong>Marca: </strong>{{ producto.marca }}</p>
+    <p><strong>Cantidad: </strong>{{ producto.cantidad }}</p>
+    <p><strong>Stock: </strong>{{ producto.stock }}</p>
+    <p><strong>Precio. </strong>{{ producto.precio }}</p>
   </mat-card-content>
 </mat-card>
