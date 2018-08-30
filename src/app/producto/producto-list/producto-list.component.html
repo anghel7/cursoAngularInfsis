@@ -1,7 +1,8 @@
 <h3 [innerHTML]="titulo"></h3>
-<label>Buscar</label>
-<input name="buscar" (keyup)="buscar($event.target.value)" placeholder="Ingrese el nombre del producto">
-<hr>
+
+<mat-form-field>
+  <input matInput name="buscar" (keyup)="buscar($event.target.value)" placeholder="Ingrese el nombre del producto">
+</mat-form-field>
 
 <div class="contenedor">
   <div class="lista-producto">

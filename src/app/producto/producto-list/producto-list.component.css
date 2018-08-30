@@ -8,7 +8,7 @@
   width: 65%;
   border: blue solid 1px;
   height: 400px;
-  overflow:auto;
+  overflow: auto;
 }
 
 .detalle-producto {
@@ -17,4 +17,9 @@
   width: 34%;
   border: blue solid 1px;
   height: 400px;
+}
+
+mat-form-field {
+  font-size: 15px;
+  width: 65%;
 }
