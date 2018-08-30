@@ -30,8 +30,8 @@ export class ProductoService {
     return this.myHttpClient.put<Producto>(`${API_URL}/${id}`, productoToUpdate);
   }
 
-  deleteProductoById(id: number): Producto {
-    return null;
+  deleteProductoById(id: number): Observable<Producto> {
+    return this.myHttpClient.delete<Producto>(`${API_URL}/${id}`);
   }
 
 }

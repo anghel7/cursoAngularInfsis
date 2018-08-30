@@ -1,5 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Producto } from '../models/producto.interface';
+import { ProductoService } from '../services/producto.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-producto-item',
@@ -15,7 +17,8 @@ export class ProductoItemComponent implements OnInit {
   @Output()
   onFocused: EventEmitter<Producto>;
 
-  constructor() {
+  constructor(private myProductoService: ProductoService,
+    private myRouter: Router) {
     this.onFocused = new EventEmitter();
   }
 
@@ -31,7 +34,18 @@ export class ProductoItemComponent implements OnInit {
     console.log('Editando Producto');
   }
 
-  eliminarProducto(id: number): void {
-    console.log('Eliminando el producto con el id: ', id);
+  eliminarProducto(): void {
+    this.myProductoService.deleteProductoById(this.producto.id_producto)
+      .subscribe(
+        (productoDeleted: Producto) => {
+          console.log('Se elimino el producto: ', productoDeleted);
+          this.myRouter.navigate(['home']);
+          this.myRouter.navigate(['producto', 'lista']);
+        },
+        (error) => {
+          console.log('Error al eliminar: ', error);
+        },
+        () => { }
+      );
   }
 }
