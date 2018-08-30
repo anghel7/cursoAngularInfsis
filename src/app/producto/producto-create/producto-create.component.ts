@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Producto } from '../models/producto.interface';
 import { ProductoService } from '../services/producto.service';
 import { Observer } from 'rxjs';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-producto-create',
@@ -19,7 +20,8 @@ export class ProductoCreateComponent implements OnInit {
     image_url: ''
   }
 
-  constructor(private myProductoService: ProductoService) { }
+  constructor(private myProductoService: ProductoService,
+    private myRouter: Router) { }
 
   ngOnInit() {
   }
@@ -27,7 +29,7 @@ export class ProductoCreateComponent implements OnInit {
   yesAction(): void {
     let observador: Observer<Producto> = {
       next: (producto) => {
-        console.log('mostrando Data: ', producto);
+        this.myRouter.navigate(['lista', 'producto']);
       },
       error: (error) => {
         console.log('Se produjo el siguente error al recuperar al crear un productos: ', error);
@@ -41,10 +43,4 @@ export class ProductoCreateComponent implements OnInit {
     this.myProductoService.createProducto(this.producto)
       .subscribe(observador);
   }
-
-  noAction(): void {
-    console.log('noActioin');
-
-  }
-
 }
