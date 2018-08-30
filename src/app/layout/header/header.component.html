@@ -1,7 +1,19 @@
 <mat-toolbar color="primary">
   <mat-toolbar-row>
-    <button routerLink="/home" mat-stroked-button>Inicio</button>
-    <button routerLink="/producto/lista" mat-stroked-button>Lista de productos</button>
-    <button routerLink="/producto/crear" mat-stroked-button>Crear Producto</button>
+    <span>Curso Angular</span>
+    <span class="toolbar-spacer"></span>
+    <button mat-button [matMenuTriggerFor]="menucliente">Clientes</button>
+    <mat-menu #menucliente="matMenu">
+      <button routerLink="/home" mat-menu-item>Lista de clientes</button>
+      <button routerLink="/home" mat-menu-item>Registrar cliente</button>
+    </mat-menu>
+    <button mat-button [matMenuTriggerFor]="menuproducto">Productos</button>
+    <mat-menu #menuproducto="matMenu">
+      <button routerLink="/producto/lista" mat-menu-item>Lista de productos</button>
+      <button routerLink="/producto/crear" mat-menu-item>Crear Producto</button>
+    </mat-menu>
+    <button routerLink="/home" mat-icon-button>
+      <mat-icon aria-label="Example icon-button with a heart icon">home</mat-icon>
+    </button>
   </mat-toolbar-row>
 </mat-toolbar>
