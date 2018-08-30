@@ -11,10 +11,9 @@ import { Observer } from 'rxjs';
 export class ProductoListComponent implements OnInit {
 
   titulo: string = "Lista de productos";
-  campoBusqueda: string = "hola";
   listaProductos: Producto[] = [];
   productoDetailed: Producto;
-
+  listaProductosDatsource: Producto[] = [];
 
   constructor(private myProductoService: ProductoService) {
   }
@@ -22,8 +21,8 @@ export class ProductoListComponent implements OnInit {
   ngOnInit() {
     let observador: Observer<Producto[]> = {
       next: (listaProducto) => {
-        console.log('mostrando Data: ', listaProducto);
         this.listaProductos = listaProducto;
+        this.listaProductosDatsource = listaProducto;
       },
       error: (error) => {
         console.log('Se produjo el siguente error al recuperar la lista de productos: ', error);
@@ -38,8 +37,14 @@ export class ProductoListComponent implements OnInit {
       .subscribe(observador);
   }
 
-  buscar(): void {
-    this.campoBusqueda = "nuevo busqueda";
+  buscar($event: string): void {
+    this.listaProductosDatsource = this.listaProductos.filter(
+      (producto) => {
+        let nombreProducto: string = producto.nombre;
+        return nombreProducto.toLocaleLowerCase().includes($event.toLowerCase());
+      }
+    );
+
   }
 
   focusedAction($event: Producto): void {
