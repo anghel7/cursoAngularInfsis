@@ -41,7 +41,7 @@ export class ProductoListComponent implements OnInit {
     this.listaProductosDatsource = this.listaProductos.filter(
       (producto) => {
         let nombreProducto: string = producto.nombre;
-        return nombreProducto.toLocaleLowerCase().includes($event.toLowerCase());
+        return nombreProducto.toLowerCase().includes($event.toLowerCase());
       }
     );
 
