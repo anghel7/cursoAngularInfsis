@@ -27,33 +27,33 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
-# Cotenido del curso
+## Cotenido del curso
 
-## Angular CLI Installation
+### Angular CLI Installation
 
-## Angular Project Structure
+### Angular Project Structure
 
-## Creating Components.
+### Creating Components.
 
-## Modules
+### Modules
 
-## Databinding
+### Databinding
 
-## Directives
+### Directives
 
-## Inputs and Outputs
+### Inputs and Outputs
 
-## Services
+### Services
 
-## Dependency Injection
+### Dependency Injection
 
-## Observables
+### Observables
 
-## HttpClient Module
+### HttpClient Module
 
-## Routing
+### Routing
 
-## Angular Material Installation
+### Angular Material Installation
 
 # Link para unirse al grupo de whatsapp
 https://chat.whatsapp.com/77hvXXpALi5DxaBm9y1S38
@@ -66,3 +66,6 @@ https://docs.google.com/spreadsheets/d/1SyTxTtkwGNRqbgvX0gS9EKUu-0lRmZw9uqPg-tFY
 
 # Dominio de la servicio rest para productos
 http://cursoangular.hosting.cs.umss.edu.bo/api/productos
+
+# Dominio de la servicio rest para clientes
+http://cursoangular.hosting.cs.umss.edu.bo/api/clientes
