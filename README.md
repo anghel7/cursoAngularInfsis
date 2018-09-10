@@ -69,3 +69,10 @@ http://cursoangular.hosting.cs.umss.edu.bo/api/productos
 
 # Dominio de la servicio rest para clientes
 http://cursoangular.hosting.cs.umss.edu.bo/api/clientes
+
+# Examen de Angular
+Sábado 15 de septiembre a horas 7:30 am 10:00 <br />
+Laboratorio 3 <br />
+Traerse un proyecto en blanco o si gustan el proyecto del curso para que puedan trabajar sobre ese proyecto<br />
+Todos deben traer sus maquinas con todo el software instalado y con una conexion movil a internet por que el laboratorio 4 estara ocupado<br />
+## Cuaquier otra aviso se publicara por este medio
