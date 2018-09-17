@@ -89,5 +89,17 @@ http://cursoangular.hosting.cs.umss.edu.bo/api/clientes<br />
 http://cursoangular.hosting.cs.umss.edu.bo/api/productos<br />
 http://cursoangular.hosting.cs.umss.edu.bo/api/ventas<br />
 
+## Modelo para Venta
+{
+  id_venta?: number,<br />
+  id_cliente: number,<br />
+  nit: string,<br />
+  id_producto: number,<br />
+  cantidad: number,<br />
+  observacion: string,<br />
+  cliente?: Cliente,<br />
+  producto?: Producto,<br />
+}
+
 
 
