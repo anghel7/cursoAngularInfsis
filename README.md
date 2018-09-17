@@ -76,3 +76,18 @@ Laboratorio 3 <br />
 Traerse un proyecto en blanco o si gustan el proyecto del curso para que puedan trabajar sobre ese proyecto<br />
 Todos deben traer sus maquinas con todo el software instalado y con una conexion movil a internet por que el laboratorio 4 estara ocupado<br />
 ## Cuaquier otra aviso se publicara por este medio
+
+# Examen de Angular
+## Implementar la siguente funcionalidad para ventas
+El examen se lo debe implementar usando lazy load que se vio en el curso.<br />
+1.-	Listar Ventas	     25<br />
+2.-	Crear una Venta	   40<br />
+3.-	Editar una venta	 45<br />
+Total                 110<br />
+## Servicos Rest Api a usar
+http://cursoangular.hosting.cs.umss.edu.bo/api/clientes<br />
+http://cursoangular.hosting.cs.umss.edu.bo/api/productos<br />
+http://cursoangular.hosting.cs.umss.edu.bo/api/ventas<br />
+
+
+
