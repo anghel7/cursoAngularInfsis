@@ -101,5 +101,6 @@ http://cursoangular.hosting.cs.umss.edu.bo/api/ventas<br />
   producto?: Producto,<br />
 }
 
-
-
+## Modelo para Venta
+ghahanghelhh@outlook.com<br />
+ghehahanghel@gmail.com<br />
